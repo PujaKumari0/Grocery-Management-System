@@ -1,0 +1,47 @@
+<div id="wrapper">
+  <div id="header">
+    <h1>{{(party_id)?"Update Party":"Add party Details "}}
+      <span class="example-spacer"></span>
+      <mat-icon routerLink="../party">clear</mat-icon>
+    </h1>
+  </div>
+  <div id="textarea">
+    <form [formGroup]="party_form">
+      <div id="left_box">
+        <input type="hidden" formControlName="party_id" *ngIf="party_id">
+        <mat-form-field appearance="fill">
+          <mat-label>Enter Name </mat-label>
+          <input formControlName="party_name" matInput placeholder="Enter Party Name">
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label> Mobile Number</mat-label>
+          <input type="number" formControlName="party_mobile" matInput placeholder="Enter Mobile Number">
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Enter Email</mat-label>
+          <input formControlName="party_email" matInput placeholder="Enter Email">
+        </mat-form-field>
+      </div>
+      <div id="right_box">
+        <mat-form-field appearance="fill">
+          <mat-label>Enter Address</mat-label>
+          <input formControlName="party_address" matInput placeholder="Enter Address">
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Enter Account_number</mat-label>
+          <input formControlName="party_a_c_no" type="number" matInput placeholder="Enter Account_number">
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Enter IFSC code</mat-label>
+          <input matInput formControlName="party_ifsc_code" placeholder="Enter IFSC code">
+        </mat-form-field>
+      </div>
+    </form>
+  </div>
+  <div class="buttonarea">
+    <!-- <button mat-raised-button color="warn" routerLink="../party_table">Back</button> -->
+    <button mat-raised-button color="warn" (click)="resetform()" *ngIf="!party_id">Reset</button>
+    <button mat-raised-button color="primary" (click)="(party_id)?updateparty():onsubmit()">{{(party_id)?"Update":"Add "}}</button>
+    <button mat-raised-button color="warn" routerLink="../party" (click)="backform()">Back</button> 
+  </div>
+</div>

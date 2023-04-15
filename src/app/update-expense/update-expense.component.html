@@ -1,0 +1,35 @@
+<!-- <p>updatecategory works!</p> -->
+<div id="wrapper">
+    <div id="header">
+      <h1>Add Expense details
+        <span class="example-spacer"></span>
+        <mat-icon mat-dialog-close routerLink="/adminhome/expense">clear</mat-icon>
+      </h1>
+    </div>
+    <div id="textarea">
+      <form [formGroup]="expense_form">
+        <div id="left_box">
+          <mat-form-field appearance="fill">
+            <mat-label>Expense Amount</mat-label>
+            <input matInput placeholder="Expense Amount" formControlName="exp_amt">
+          </mat-form-field>
+        </div>
+        <div id="right_box">
+          <mat-form-field appearance="fill">
+            <mat-label>Expense Date</mat-label>
+            <input type="date" matInput placeholder="Expense Date" formControlName="exp_date">
+          </mat-form-field>
+
+          <mat-form-field appearance="fill">
+            <mat-label>Expense Type</mat-label>
+            <input matInput placeholder="Expense Type" formControlName="exp_type">
+          </mat-form-field>
+
+        </div>
+      </form>
+    </div>
+    <div class="buttonarea">
+      <button mat-raised-button color="warn" (click)="resetform()">Reset</button>
+      <button mat-raised-button color="primary" (click)="submit()">Submit</button>
+    </div>
+  </div>

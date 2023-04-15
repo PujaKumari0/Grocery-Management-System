@@ -1,0 +1,37 @@
+
+<div id="wrapper">
+    <div id="header">
+      <h1>Add Order Details
+        <span class="example-spacer"></span>
+        <mat-icon mat-dialog-close  routerLink="/adminhome/order">clear</mat-icon>
+      </h1>
+    </div>
+    <div id="textarea">
+      <form [formGroup]="order_form">
+        <div id="left_box">
+          <mat-form-field appearance="fill">
+            <mat-label>Order Item </mat-label>
+            <input matInput placeholder="order item" formControlName="order_item">
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>order date</mat-label>
+            <input matInput placeholder="order date" formControlName="order_date">
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>order quantity</mat-label>
+            <input matInput placeholder="order quantity" formControlName="order_qty">
+          </mat-form-field>
+        </div>
+        <div id="right_box">
+          <mat-form-field appearance="fill">
+            <mat-label>deliver date</mat-label>
+            <input matInput placeholder="deliver date" formControlName="deliver_date">
+          </mat-form-field>
+        </div>
+      </form>
+    </div>
+    <div class="buttonarea">
+      <button mat-raised-button color="warn" (click)="resetform()">Reset</button>
+      <button mat-raised-button color="primary" (click)="submit()">Submit</button>
+    </div>
+  </div>

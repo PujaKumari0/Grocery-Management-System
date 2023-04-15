@@ -1,0 +1,32 @@
+<!-- <p>update-item works!</p> -->
+<div id="wrapper">
+    <div id="header">
+      <h1>Add Item Details
+        <span class="example-spacer"></span>
+        <mat-icon mat-dialog-close routerLink="/adminhome/item" >clear</mat-icon>
+      </h1>
+    </div>
+    <div id="textarea">
+      <form  [formGroup]="item_form">
+        <div id="left_box">
+          <mat-form-field appearance="fill">
+            <mat-label>Enter item</mat-label>
+            <input type="number" matInput placeholder="id">
+            <input formControlName="item_name" matInput placeholder="Enter Item Name">
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Enter Rate</mat-label>
+            <input formControlName="item_rate" matInput placeholder="Enter Rate">
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Enter Item Description</mat-label>
+            <input formControlName="item_desc" matInput placeholder="Enter item description">
+          </mat-form-field>
+        </div>
+      </form>
+    </div>
+    <div class="buttonarea">
+      <button mat-raised-button color="warn" (click)="resetform()">Reset</button>
+      <button mat-raised-button color="primary" (click)="submitform()">Submit</button>
+    </div>
+  </div>

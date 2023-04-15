@@ -1,0 +1,50 @@
+
+  
+#wrapper{
+  width: 100%;
+  height: 450px;
+  padding: 10px 50px;
+  box-sizing: border-box;
+}
+#header{
+  width: 100%;
+  height: 50px;
+} 
+mat-icon{
+  float: right;
+  margin-right: 15px;
+  margin-top: 5px;
+}
+#textarea{
+  width: 100%;
+  height: auto ;
+}
+#left_box{
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+#right_box{
+  width: 100%;
+  height: 100%;
+  float: right;
+}
+.buttonarea{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.buttonarea button{
+  margin: 10px;
+}
+
+mat-form-field{
+  width:100%;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+  
+  
+  

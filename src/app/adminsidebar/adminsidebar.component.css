@@ -1,0 +1,24 @@
+#siderbar_header{
+    width: 100%;
+    height: 60px;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    line-height: 60px;
+}
+button.mdc-button.mdc-button--raised.mat-mdc-raised-button.mat-unthemed.mat-mdc-button-base {
+    display: flex;
+    justify-content: start;
+    background: none;
+    width: 100%;
+    color: white;
+}
+.menu-button:hover{
+    padding-left: 10px;
+}
+.menu-button:focus{
+    background-color: red;
+}
+.menu-button:hover{
+    background-color: green;
+}

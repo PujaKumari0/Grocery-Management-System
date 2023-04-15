@@ -1,0 +1,32 @@
+
+<div id="wrapper">
+    <div id="header">
+      <h1>Add Stock Details
+        <span class="example-spacer"></span>
+        <mat-icon mat-dialog-close  routerLink="/adminhome/stock">clear</mat-icon>
+      </h1>
+    </div>
+    <div id="textarea">
+      <form  [formGroup]="stock_form">
+        <div id="left_box">
+          <mat-form-field appearance="fill">
+            <mat-label>Enter category </mat-label>
+            <input matInput placeholder="Enter category" >
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Enter itemr</mat-label>
+            <input matInput placeholder="Enter item">
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Available Quantity</mat-label>
+            <input matInput placeholder="Available Quantity" formControlName="available_qty">
+          </mat-form-field>
+        </div>
+      
+      </form>
+    </div>
+    <div class="buttonarea">
+      <button mat-raised-button color="warn" (click)="resetform()">Reset</button>
+      <button mat-raised-button color="primary" (click)="onsubmitt()">Submit</button>
+    </div>
+  </div>

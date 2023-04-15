@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.mat-mdc-menu-content {
+    padding: 0;
+    list-style-type: none;
+    background-color:brown;
+  }
+  
+element.style {
+}
+.mdc-text-field--filled:not(.mdc-text-field--disabled) {
+    /* background-color:#e88290; */
+}

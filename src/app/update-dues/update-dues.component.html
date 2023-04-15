@@ -1,0 +1,27 @@
+
+<div id="wrapper">
+    <div id="header">
+      <h1>Add Dues Details
+        <span class="example-spacer"></span>
+        <mat-icon mat-dialog-close  routerLink="/adminhome/dues">clear</mat-icon>
+      </h1>
+    </div>
+    <div id="textarea">
+      <form  [formGroup]="dues_form">
+        <div id="left_box">
+          <mat-form-field appearance="fill">
+            <mat-label>Dues Amount </mat-label>
+            <input type="number" matInput placeholder="Dues Amount" formControlName="dues_amt">
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Dues Months</mat-label>
+            <input type="text" matInput placeholder="Dues Months" formControlName="dues_months">
+          </mat-form-field>
+        </div>
+      </form>
+    </div>
+    <div class="buttonarea">
+      <button mat-raised-button color="warn" (click)="resetform()">Reset</button>
+      <button mat-raised-button color="primary" (click)="onsubmit()">Submit</button>
+    </div>
+  </div>

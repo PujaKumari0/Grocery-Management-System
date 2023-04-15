@@ -1,0 +1,48 @@
+
+<mat-toolbar style="background-color:green;">
+  <button  routerLink="/home" routerLinkActive="active" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>home</mat-icon>
+  </button>
+  <span>Grocery Management System</span>
+  <span class="example-spacer"></span>  
+  <button mat-button [matMenuTriggerFor]="menu">Login</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item class="action_btn" routerLink="/admin" routerLinkActive="active">Admin</button>
+  <button mat-menu-item class="action_btn" routerLink="/employee" routerLinkActive="active">Employee</button>
+  <button mat-menu-item class="action_btn" routerLink="/customer" routerLinkActive="active">Customer</button>
+</mat-menu>
+</mat-toolbar>
+<div>
+  <div id="view">
+    <div id="adminlogin">
+     <h3>Employee Login</h3>
+     <img src="./assets/img7.png" width="100px" height="50px;" id="admin_image">
+    <form class="example-form">
+    
+<mat-icon class="mat_icon1" >account_circle</mat-icon>
+      <mat-form-field class="example-full-width">
+        <mat-label>Username</mat-label>
+        <input matInput  placeholder="Enter Your Email">
+      </mat-form-field>
+      <mat-icon  class="mat_icon2">lock</mat-icon>
+      <mat-form-field class="example-full-width">
+        <mat-label id="pwd">password</mat-label>
+        <input type="password" matInput placeholder="Enter Password">
+      </mat-form-field>
+    </form>
+    <button mat-button color="primary" id="login" routerLink="//employeedashboard" routerLinkActive="active">Login</button>
+    <p id="p1">Create New Account</p>
+    <p id="p2">Forget Account?</p>
+    
+    </div>
+  </div>
+
+</div>
+<div>
+  <mat-toolbar style="background-color:green;">
+    <button mat-button>
+      <span>Powered By:Puja Kumari</span>
+    </button>
+</mat-toolbar>
+</div>
+<app-footer></app-footer>

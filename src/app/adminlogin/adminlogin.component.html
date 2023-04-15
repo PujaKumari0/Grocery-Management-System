@@ -1,0 +1,34 @@
+<!-- <p>employeelogin works!</p> -->
+<mat-toolbar style="background-color:brown">
+  <span>Grocery Management System</span>
+  <span class="example-spacer"></span>
+</mat-toolbar>
+<div>
+  <div id="view">
+    <div id="adminlogin">
+     <h3>Admin Login</h3>
+     <img src="./assets/img7.png" width="100px" height="50px;" id="admin_image">
+    <form class="example-form" [formGroup]="admin_login">
+<!-- <mat-icon class="mat_icon1" >account_circle</mat-icon> -->
+      <mat-form-field class="example-full-width">
+        <mat-label>Username</mat-label>
+        <input matInput  placeholder="Enter Your Email" formControlName="uid">
+      </mat-form-field>
+      <!-- <mat-icon  class="mat_icon2">lock</mat-icon> -->
+      <mat-form-field class="example-full-width">
+        <mat-label id="pwd">password</mat-label>
+        <input type="password" matInput placeholder="Enter Password" formControlName="pwd">
+      </mat-form-field>
+    </form>
+    <button mat-button color="primary" (click)="login()" id="login">Login</button>
+    </div>
+  </div>
+</div>
+<div>
+  <mat-toolbar style="background-color:brown;">
+    <button mat-button>
+      <span>Designed By:Puja Kumari</span>
+    </button>
+</mat-toolbar>
+</div>
+<app-footer></app-footer>

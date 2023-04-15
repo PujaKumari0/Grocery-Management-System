@@ -1,0 +1,55 @@
+
+
+<div id="wrapper">
+    <div id="header">
+      <h1>Add Employee Details
+        <span class="example-spacer"></span>
+        <mat-icon mat-dialog-close  routerLink="/adminhome/employee">clear</mat-icon>
+      </h1>
+    </div>
+    <div id="textarea">
+      <form [formGroup]="employee_form">
+        <div id="left_box">
+          <mat-form-field appearance="fill">
+            <mat-label>Enter  Name </mat-label>
+            <input matInput placeholder="Enter  Name" formControlName="emp_name">
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Enter Mobile Number</mat-label>
+            <input matInput placeholder="Enter Mobile Number" formControlName="emp_mob_no">
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Enter Email</mat-label>
+            <input matInput placeholder="Enter Email" formControlName="emp_email_id">
+          </mat-form-field>
+        </div>
+        <div id="right_box">
+          <mat-form-field appearance="fill">
+            <mat-label>Enter Address</mat-label>
+            <input matInput placeholder="Enter Address" formControlName="emp_pasword">
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Enter Account_number</mat-label>
+            <input type="number" matInput placeholder="Enter Account_number" formControlName="emp_a_c_no">
+          </mat-form-field>
+          <!-- <mat-form-field appearance="fill">
+            <mat-label>Enter IFSC code</mat-label>
+            <input matInput placeholder="Enter IFSC code">
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Enter IFSC code</mat-label>
+            <input matInput placeholder="Enter IFSC code">
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Enter IFSC code</mat-label>
+            <input matInput placeholder="Enter IFSC code">
+          </mat-form-field>
+           -->
+        </div>
+      </form>
+    </div>
+    <div class="buttonarea">
+      <button mat-raised-button color="warn" (click)="resetform()">Reset</button>
+      <button mat-raised-button color="primary" (click)="onsubmit()">Submit</button>
+    </div>
+  </div>

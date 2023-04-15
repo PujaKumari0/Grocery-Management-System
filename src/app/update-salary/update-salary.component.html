@@ -1,0 +1,46 @@
+
+
+<div id="wrapper">
+    <div id="header">
+      <h1>Add Salary Details
+        <span class="example-spacer"></span>
+        <mat-icon mat-dialog-close  routerLink="/adminhome/salary">clear</mat-icon>
+      </h1>
+    </div>
+    <div id="textarea">
+      <form [formGroup]="salary_form">
+        <div id="left_box">
+          <mat-form-field appearance="fill">
+            <mat-label>Enter salary </mat-label>
+            <input type="number" matInput placeholder="Enter Salary" formControlName="salary_months">
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Salary Amount</mat-label>
+            <input matInput placeholder="Enter salary Amount" formControlName="salary_amt">
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Salary Insentive</mat-label>
+            <input matInput placeholder="salary Insentive" formControlName="salary_insentive">
+          </mat-form-field>
+        </div>
+        <!-- <div id="right_box">
+          <mat-form-field appearance="fill">
+            <mat-label>Enter Address</mat-label>
+            <input matInput placeholder="Enter Address">
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Enter Account_number</mat-label>
+            <input matInput placeholder="Enter Account_number">
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Enter IFSC code</mat-label>
+            <input matInput placeholder="Enter IFSC code">
+          </mat-form-field>
+        </div> -->
+      </form>
+    </div>
+    <div class="buttonarea">
+      <button mat-raised-button color="warn" (click)="resetform()">Reset</button>
+      <button mat-raised-button color="primary" (click)="onsubmit()">Submit</button>
+    </div>
+  </div>

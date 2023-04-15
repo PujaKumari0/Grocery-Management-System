@@ -1,0 +1,40 @@
+
+  .main_area{
+    padding-right: 12px;
+    padding-top: 0px;
+  }
+  #thumabnal{
+    width: calc(25% - 25px);
+    height: 120px;
+    border-left: 5px solid black;
+    border-radius: 5px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 18px;
+    background-color:brown;
+  }
+  mat-icon{
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    float: right;
+    margin: 20px;
+    columns: white;
+    margin-top: 30px;
+  }
+  #thumabnal span{
+    font-size: 16px;
+    line-height: 35px;
+    margin-left: 20px;
+    /* color:brown;  */
+  }
+  #thumabnal span{
+    line-height: 30px;
+    text-align: left;
+  }
+  span{
+    color: white;
+  }
+  mat-icon{
+    color: white;
+  }

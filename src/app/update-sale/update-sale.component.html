@@ -1,0 +1,41 @@
+
+<div id="wrapper">
+    <div id="header">
+      <h1>Add Sale Details
+        <span class="example-spacer"></span>
+        <mat-icon mat-dialog-close  routerLink="/adminhome/sale">clear</mat-icon>
+      </h1>
+    </div>
+    <div id="textarea">
+      <form [formGroup]="sale_form">
+        <div id="left_box">
+          <mat-form-field appearance="fill">
+            <mat-label>Sale Date </mat-label>
+            <input matInput placeholder="sale date" formControlName="sale_date">
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Sale Amount</mat-label>
+            <input matInput placeholder="sale Amount" formControlName="sale_amt">
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Discount</mat-label>
+            <input matInput placeholder="Enter Email" formControlName="sale_discount">
+          </mat-form-field>
+        </div>
+        <div id="right_box">
+          <mat-form-field appearance="fill">
+            <mat-label>Gst</mat-label>
+            <input matInput placeholder="GST" formControlName="sale_gst">
+          </mat-form-field>
+          <!-- <mat-form-field appearance="fill">
+            <mat-label>Discount</mat-label>
+            <input matInput placeholder="Discount" formControlName="">
+          </mat-form-field> -->
+        </div>
+      </form>
+    </div>
+    <div class="buttonarea">
+      <button mat-raised-button color="warn" (click)="resetform()">Reset</button>
+      <button mat-raised-button color="primary" (click)="onsubmit()">Submit</button>
+    </div>
+  </div>

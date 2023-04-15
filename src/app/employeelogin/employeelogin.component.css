@@ -1,0 +1,104 @@
+#view{
+  width: 100%;
+  height: 550px;
+  background-size: cover;
+  /* background-color:rgb(9, 39, 96); */
+  background-image: url("src/assets/img.jpg");
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+span{
+  color: white;
+}
+button{
+  color: white;
+  margin: 5px;
+}
+button:hover{
+  background-color:brown;
+}
+.active{
+  background-color:blue;
+}
+#adminlogin{
+  width: 350px;
+  height: 450px;
+  background-color:#e88290ea;
+  margin-left: 600px;
+  margin-top: 55px;
+  /* opacity: 0.5; */
+  float: left;
+}
+#admin_image{
+  width: 100px;
+  height: 100px;
+  margin-left: 110px;
+  margin-top: 20px;
+  position: fixed;
+}
+#account_circle{
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size: 30px;
+}
+#lock_icon{
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.example-form {
+  margin-top: 150px;
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  float:right;
+  width:calc(90% - 20px);
+  padding: 0px  10px;
+}
+.font{
+  margin-top: 20px;
+}
+h3{
+  color: white;
+  margin-top: 30px;
+  font-size: 30px;
+  text-align: center;
+}
+#password{
+  margin-top:10px;
+}
+mat-icon{
+  color: white;
+  padding: 5px;
+  font-size: 30px;
+}
+.mat_icon1{
+  position: relative;
+  top: 20px;
+}
+.mat_icon2{
+  position: relative;
+  top: 50px;
+}
+#login{
+  width: 80px;
+  height: 30px;
+  color: white;
+  float: left;
+  margin-left: 140px;
+  background-color: rgb(14, 14, 157);
+}
+#p1{
+  margin-top: 5px;
+  float: left;
+  margin-left: 10px;
+}
+#p2{
+  margin-top: 5px;
+  float: right;
+  margin-right:15px;
+}
+

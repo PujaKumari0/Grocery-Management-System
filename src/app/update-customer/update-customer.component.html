@@ -1,0 +1,38 @@
+
+<div id="wrapper">
+    <div id="header">
+      <h1>Add Customer Details
+        <span class="example-spacer"></span>
+        <mat-icon mat-dialog-close  routerLink="/adminhome/customer">clear</mat-icon>
+      </h1>
+    </div>
+    <div id="textarea">
+      <form [formGroup]="customer_form">
+        <div id="left_box">
+          <mat-form-field appearance="fill">
+            <mat-label>Enter  Name </mat-label>
+            <input  formControlName="cust_name" matInput placeholder="Enter Name">
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Enter Mobile Number</mat-label>
+            <input formControlName="cust_mob_no" type="number" matInput placeholder="Enter Mobile Number">
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Enter Email</mat-label>
+            <input formControlName="cust_email" matInput placeholder="Enter Email">
+          </mat-form-field>
+        </div>
+  
+        <div id="right_box">
+          <mat-form-field appearance="fill">
+            <mat-label>Enter password</mat-label>
+            <input formControlName="cust_password" type="password" matInput placeholder="Enter Password">
+          </mat-form-field>
+        </div>
+      </form>
+    </div>
+    <div class="buttonarea">
+      <button mat-raised-button color="warn" (click)="resetform()">Reset</button>
+      <button mat-raised-button color="primary" (click)="onsubmit()">Submit</button>
+    </div>
+  </div>

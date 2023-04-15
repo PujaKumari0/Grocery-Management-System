@@ -1,0 +1,30 @@
+
+<div id="wrapper">
+    <div id="header">
+      <h1>Add Category Details
+        <span class="example-spacer"></span>
+        <mat-icon mat-dialog-close routerLink="/adminhome/category">clear</mat-icon>
+      </h1>
+    </div>
+    <div id="textarea">
+      <form  [formGroup]="category_form">
+        <div id="left_box">
+          <mat-form-field appearance="fill">
+            <mat-label>Enter category</mat-label>
+            <input formControlName="cat_name" matInput placeholder="Enter category name">
+          </mat-form-field>
+        </div>
+        <div id="right_box">
+          <mat-form-field appearance="fill">
+            <mat-label> Category description</mat-label>
+            <input formControlName="cat_desc" matInput placeholder="Enter category description">
+          </mat-form-field>
+        </div>
+      </form>
+    </div>
+    <div class="buttonarea">
+      <!-- <button mat-raised-button color="warn" routerLink="../category_table">Back</button> -->
+      <button mat-raised-button color="warn" (click)="resetform()">Reset</button>
+      <button mat-raised-button color="primary" (click)="submitform()">Submit</button>
+    </div>
+  </div>
